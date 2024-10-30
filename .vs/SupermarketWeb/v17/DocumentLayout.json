@@ -22,8 +22,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -34,8 +42,7 @@
               "RelativeToolTip": "Pages\\Categories\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-30T16:17:44.197Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T16:17:44.197Z"
             },
             {
               "$type": "Document",
@@ -45,18 +52,10 @@
               "RelativeDocumentMoniker": "Pages\\Categories\\Edit.cshtml.cs",
               "ToolTip": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb\\Pages\\Categories\\Edit.cshtml.cs",
               "RelativeToolTip": "Pages\\Categories\\Edit.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T15:45:11.258Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "Pages\\Categories\\Edit.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-30T15:45:02.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T15:45:02.761Z"
             }
           ]
         }
