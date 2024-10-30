@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|c:\\users\\juanp\\source\\repos\\supermarketweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|c:\\users\\juanp\\source\\repos\\supermarketweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|c:\\users\\juanp\\source\\repos\\supermarketweb\\data\\supermarketcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|solutionrelative:data\\supermarketcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|c:\\users\\juanp\\source\\repos\\supermarketweb\\moddels\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|solutionrelative:moddels\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|c:\\users\\juanp\\source\\repos\\supermarketweb\\moddels\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|solutionrelative:moddels\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +30,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T04:30:06.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-30T04:28:49.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SupermarketContext.cs",
+              "DocumentMoniker": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb\\Data\\SupermarketContext.cs",
+              "RelativeDocumentMoniker": "Data\\SupermarketContext.cs",
+              "ToolTip": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb\\Data\\SupermarketContext.cs",
+              "RelativeToolTip": "Data\\SupermarketContext.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T04:24:33.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb\\Moddels\\Category.cs",
+              "RelativeDocumentMoniker": "Moddels\\Category.cs",
+              "ToolTip": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb\\Moddels\\Category.cs",
+              "RelativeToolTip": "Moddels\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T04:23:10.026Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -18,6 +91,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb\\Moddels\\Product.cs",
+              "RelativeDocumentMoniker": "Moddels\\Product.cs",
+              "ToolTip": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb\\Moddels\\Product.cs",
+              "RelativeToolTip": "Moddels\\Product.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T04:20:03.34Z",
+              "EditorCaption": ""
             }
           ]
         }
