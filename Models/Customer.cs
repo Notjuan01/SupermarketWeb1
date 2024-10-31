@@ -1,6 +1,6 @@
 ﻿namespace SupermarketWeb.Models
 {
-	public class Customers
+	public class Customer
 	{
 		public int Id { get; set; }
 		public int document_number { get; set; }

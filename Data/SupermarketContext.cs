@@ -8,6 +8,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SupermarketWeb.Models;
+
 
 namespace SupermarkerEF.Data
 {
@@ -17,7 +19,7 @@ namespace SupermarkerEF.Data
 		{
 		}
 
-		//public DbSet<Customer> Customers { get; set; }
+		public DbSet<Customer> Customers { get; set; }
 
 		//public DbSet<PayMode> PayModes { get; set; }
 
