@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SupermarketWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97444fedb6b03d8c13ab46d3d3815a38844cc2a1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64a38a0286da8600ca3d8f60d2fafb25fe475b41")]
 [assembly: System.Reflection.AssemblyProductAttribute("SupermarketWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SupermarketWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
