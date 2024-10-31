@@ -5,53 +5,54 @@ using SupermarketWeb.Models;
 
 namespace SupermarketWeb.Pages.Customers
 {
-    public class DeleteModel : PageModel
-    {
-        private readonly SupermarketContext _context;
+	public class DeleteModel : PageModel
+	{
+		private readonly SupermarketContext _context;
 
-        public DeleteModel(SupermarketContext context)
-        {
-            _context = context;
-        }
+		public DeleteModel(SupermarketContext context)
+		{
+			_context = context;
+		}
 
-        [BindProperty]
-        public Customer Customer { get; set; }
+		[BindProperty]
+		public Customer Customer { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
+		public async Task<IActionResult> OnGetAsync(int? id)
+		{
+			if (id == null)
+			{
+				return NotFound();
+			}
 
-            Customer = await _context.Customers.FindAsync(id);
+			Customer = await _context.Customers.FindAsync(id);
 
-            if (Customer == null)
-            {
-                return NotFound();
-            }
+			if (Customer == null)
+			{
+				return NotFound();
+			}
 
-            return Page();
-        }
+			return Page();
+		}
 
-        public async Task<IActionResult> OnPostAsync(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
+		public async Task<IActionResult> OnPostAsync(int? id)
+		{
+			if (id == null)
+			{
+				return NotFound();
+			}
 
-            var customer = await _context.Customers.FindAsync(id);
+			var customer = await _context.Customers.FindAsync(id);
 
-            if (customer == null)
-            {
-                return NotFound();
-            }
+			if (customer == null)
+			{
+				return NotFound();
+			}
 
-            _context.Customers.Remove(customer);
-            await _context.SaveChangesAsync();
+			_context.Customers.Remove(customer);
+			await _context.SaveChangesAsync();
 
-            return RedirectToPage("./Index");
-        }
-    }
+			return RedirectToPage("./Index");
+		}
+	}
 }
+
