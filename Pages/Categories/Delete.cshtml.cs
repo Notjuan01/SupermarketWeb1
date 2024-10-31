@@ -6,31 +6,55 @@ using SupermarketWEB.Models;
 
 namespace SupermarketWeb.Pages.Categories
 {
-    public class DeleteModel : PageModel
-    {
-        private readonly SupermarketContext _context;
-        public DeleteModel(SupermarketContext context)
-        {
-            _context = context;
-        }
-        [BindProperty]
-        public Category Category { get; set; } = default!;
+	public class DeleteModel : PageModel
+	{
+		private readonly SupermarketContext _context;
 
-        public async Task<IActionResult> OnGetAsync(int? id)
-        {
-            if(id == null || _context.Categories == null)
-            {
-                return NotFound();
-            }
-            var category =await _context.Categories.FirstAsync();
+		public DeleteModel(SupermarketContext context)
+		{
+			_context = context;
+		}
 
-            if (category == null)
-            {
-                Category = category;
-                _context.Categories.Remove(Category);
-                await _context.SaveChangesAsync();
-            }
-            return RedirectToPage("./Index");
-        }
-    }
+		[BindProperty]
+		public Category Category { get; set; }
+
+		public async Task<IActionResult> OnGetAsync(int? id)
+		{
+			if (id == null)
+			{
+				return NotFound();
+			}
+
+			Category = await _context.Categories.FindAsync(id);
+
+			if (Category == null)
+			{
+				return NotFound();
+			}
+
+			return Page();
+		}
+
+		public async Task<IActionResult> OnPostAsync(int? id)
+		{
+			if (id == null)
+			{
+				return NotFound();
+			}
+
+			var category = await _context.Categories.FindAsync(id);
+
+			if (category == null)
+			{
+				return NotFound();
+			}
+
+			_context.Categories.Remove(category);
+			await _context.SaveChangesAsync();
+
+			return RedirectToPage("./Index");
+		}
+	}
+
 }
+

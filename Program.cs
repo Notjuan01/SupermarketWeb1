@@ -37,6 +37,7 @@ namespace SupermarketWEB
 			app.MapRazorPages();
 
 			app.Run();
+		
 		}
 	}
 }

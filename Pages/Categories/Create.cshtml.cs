@@ -21,16 +21,19 @@ namespace SupermarketWeb.Pages.Categories
         }
         [BindProperty]
         public Category Category { get; set; } = default!;
-        public async Task<IActionResult> OnPostAsync()
-        {
-            if(!ModelState.HasReachedMaxErrors || _context.Categories == null || Category == null)
-            {
-                return Page();
-            }
-            _context.Categories.Add(Category);
-            await _context.SaveChangesAsync();
+		public async Task<IActionResult> OnPostAsync()
+		{
+			if (!ModelState.IsValid)
+			{
+				return Page();
+			}
 
-            return RedirectToPage("./Index");
-        }
-    }
+			
+			_context.Categories.Add(Category);
+			await _context.SaveChangesAsync();
+
+			return RedirectToPage("./Index");
+		}
+
+	}
 }

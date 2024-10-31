@@ -17,20 +17,24 @@ namespace SupermarketWeb.Pages.Categories
         }
         [BindProperty]
         public Category Category { get; set; } = default!;
-        public async Task<IActionResult> OnGetAsync(int? id)
-        {
-            if (id == null || _context.Categories == null)
-            {
-                return NotFound();
-            }
-            var category = await _context.Categories.FirstOrDefaultAsync(m => m.Id == id);
-            if (category == null)
-            {
-                return NotFound();
-            }
-            Category = category;
-            return Page();
-        }
+		public async Task<IActionResult> OnGetAsync(int? id)
+		{
+			if (id == null)
+			{
+				return NotFound();
+			}
+
+			Category = await _context.Categories.FindAsync(id);
+
+			if (Category == null)
+			{
+				return NotFound();
+			}
+
+			return Page();
+		}
+
+
 
 		public async Task<IActionResult> OnPostAsync()
 		{
@@ -39,7 +43,15 @@ namespace SupermarketWeb.Pages.Categories
 				return Page();
 			}
 
-			_context.Attach(Category).State = EntityState.Modified;
+			var categoryInDb = await _context.Categories.FindAsync(Category.Id);
+
+			if (categoryInDb == null)
+			{
+				return NotFound();
+			}
+
+			// Actualiza los valores de la entidad existente con los nuevos valores de Category
+			_context.Entry(categoryInDb).CurrentValues.SetValues(Category);
 
 			try
 			{
@@ -47,20 +59,11 @@ namespace SupermarketWeb.Pages.Categories
 			}
 			catch (DbUpdateConcurrencyException)
 			{
-				if (!CategoryExists(Category.Id))
-				{
-					return NotFound();
-				}
-				else
-				{
-					throw;
-				}
+				// Maneja excepciones de concurrencia
 			}
 
-			// Retorno general, después del try-catch
 			return RedirectToPage("./Index");
 		}
-
 		private bool CategoryExists(int id)
         {
             return (_context.Categories?.Any(e => e.Id == id)).GetValueOrDefault();
