@@ -11,8 +11,11 @@
 		<form method="post">
 			<div class="form-group">
 				<label asp-for="Customer.document_number" class="control-label"></label>
-				<input asp-for="Customer.document_number" class="form-control" />
+				<input asp-for="Customer.document_number" class="form-control" type="number" />
 				<span asp-validation-for="Customer.document_number" class="text-danger"></span>
+			</div>
+
+			<div class="form-group">
 				<label asp-for="Customer.firts_name" class="control-label"></label>
 				<input asp-for="Customer.firts_name" class="form-control" />
 				<span asp-validation-for="Customer.firts_name" class="text-danger"></span>
