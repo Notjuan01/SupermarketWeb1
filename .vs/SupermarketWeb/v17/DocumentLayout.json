@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|solutionrelative:data\\supermarketcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|c:\\users\\juanp\\source\\repos\\supermarketweb1\\pages\\paymode\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|solutionrelative:pages\\paymode\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|c:\\users\\juanp\\source\\repos\\supermarketweb1\\pages\\paymode\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|solutionrelative:pages\\paymode\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|c:\\users\\juanp\\source\\repos\\supermarketweb1\\models\\paymode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|solutionrelative:models\\paymode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -18,19 +26,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SupermarketContext.cs",
-              "DocumentMoniker": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb1\\Data\\SupermarketContext.cs",
-              "RelativeDocumentMoniker": "Data\\SupermarketContext.cs",
-              "ToolTip": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb1\\Data\\SupermarketContext.cs",
-              "RelativeToolTip": "Data\\SupermarketContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAuAAAA",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb1\\Pages\\PayMode\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\PayMode\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb1\\Pages\\PayMode\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\PayMode\\Index.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T13:38:39.461Z",
+              "WhenOpened": "2024-11-01T13:44:42.887Z",
               "EditorCaption": ""
             },
             {
@@ -43,13 +51,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb1\\Pages\\PayMode\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\PayMode\\Index.cshtml",
+              "ToolTip": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb1\\Pages\\PayMode\\Index.cshtml",
+              "RelativeToolTip": "Pages\\PayMode\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-01T13:44:32.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SupermarketContext.cs",
+              "DocumentMoniker": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb1\\Data\\SupermarketContext.cs",
+              "RelativeDocumentMoniker": "Data\\SupermarketContext.cs",
+              "ToolTip": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb1\\Data\\SupermarketContext.cs",
+              "RelativeToolTip": "Data\\SupermarketContext.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAEwBkAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T13:38:39.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "PayMode.cs",
               "DocumentMoniker": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb1\\Models\\PayMode.cs",
               "RelativeDocumentMoniker": "Models\\PayMode.cs",
               "ToolTip": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb1\\Models\\PayMode.cs",
               "RelativeToolTip": "Models\\PayMode.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T13:38:00.701Z",
               "EditorCaption": ""

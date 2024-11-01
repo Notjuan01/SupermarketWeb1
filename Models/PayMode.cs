@@ -1,6 +1,6 @@
 ﻿namespace SupermarketWeb.Models
 {
-	public class PayMode
+	public class PayModel
 	{
 		public int Id { get; set; }
 		public string Name { get; set; }
