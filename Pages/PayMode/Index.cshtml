@@ -4,36 +4,53 @@
 	ViewData["Tittle"] = "Index PayMode";
 }
 <h1>Index PayMode</h1>
+
 <p>
-	<a asp-page="Create" class="btn btn-success">Create New</a>
+    <a asp-page="/PayMode/Create" class="btn btn-success">Create New</a>
 </p>
+
 <table class="table">
-	<thead>
-		<tr>
-			<th>
-				@Html.DisplayNameFor(model => model.PayModes[0].Name)
-			</th>
-			<th>
-				@Html.DisplayNameFor(model => model.PayModes[0].Observation)
-			</th>
-			<th>Action</th>
-		</tr>
-	</thead>
-	<tbody>
-		@foreach (var item in Model.PayModes)
-		{
-			<tr>
-				<td>
-					@Html.DisplayFor(modelItem => item.Name)
-				</td>
-				<td>
-					@Html.DisplayFor(modelItem => item.Observation)
-				</td>
-				<td>
-					<a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a>
-					<a asp-page="./Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
-				</td>
-			</tr>
-		}
+    <thead>
+        <tr>
+            <th>
+                @if (Model.PayModes != null && Model.PayModes.Count > 0)
+                {
+                    @Html.DisplayNameFor(model => model.PayModes[0].Name)
+                }
+            </th>
+            <th>
+                @if (Model.PayModes != null && Model.PayModes.Count > 0)
+                {
+                    @Html.DisplayNameFor(model => model.PayModes[0].Observation)
+                }
+            </th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.PayModes != null && Model.PayModes.Count > 0)
+        {
+            foreach (var item in Model.PayModes)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Observation)
+                    </td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a>
+                        <a asp-page="./Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="3">No records found.</td>
+            </tr>
+        }
 	</tbody>
 </table>

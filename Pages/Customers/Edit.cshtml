@@ -3,42 +3,68 @@
 @{
 	ViewData["Tittle"] = "Edit";
 }
+<h1>Edit Customer</h1>
 
-<h1>Edit</h1>
-
-<h4>Customers</h4>
+<h4>Customer</h4>
 <hr />
 <div class="row">
-	<div class="col-sm-4">
-		<form method="post">
-			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
-			<input type="hidden" asp-asp-for="Category.Id" />
-			<div class="form-group">
-				<label asp-for="Customer.Document_Number" class="control-label"></label>
-				<input asp-for="Customer.Document_Number" class="form-control" />
-				<span asp-validation-for="Customer.Document_Number" class="text-danger"></span>
-			</div>
-			<div class="form-group">
-				<label asp-for="Customer.Name" class="control-label"></label>
-				<input asp-for="Customer.Name" class="form-control" />
-				<span asp-validation-for="Customer.Name" class="text-danger"></span>
-			</div>
-			<div class="form-group">
-				<label asp-for="Category.Description" class="control-label"></label>
-				<input asp-for="Category.Description" class="form-control" />
-				<span asp-validation-for="Category.Description" class="text-danger"></span>
-			</div>
-			<div class="form-group">
-				<input type="submit" value="Save" class="btn btn-success" />
-				<input type="hidden" asp-for="Category.Id" />
-				<a asp-page="./Index" class="btn btn-primary">Back to List</a>
-			</div>
-		</form>
-	</div>
+    <div class="col-sm-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Customer.Id" />
+
+            <div class="form-group">
+                <label asp-for="Customer.document_number" class="control-label"></label>
+                <input asp-for="Customer.document_number" class="form-control" />
+                <span asp-validation-for="Customer.document_number" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Customer.firts_name" class="control-label"></label>
+                <input asp-for="Customer.firts_name" class="form-control" />
+                <span asp-validation-for="Customer.firts_name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Customer.last_name" class="control-label"></label>
+                <input asp-for="Customer.last_name" class="form-control" />
+                <span asp-validation-for="Customer.last_name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Customer.address" class="control-label"></label>
+                <input asp-for="Customer.address" class="form-control" />
+                <span asp-validation-for="Customer.address" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Customer.birthday" class="control-label"></label>
+                <input asp-for="Customer.birthday" class="form-control" type="date" />
+                <span asp-validation-for="Customer.birthday" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Customer.phone_numbers" class="control-label"></label>
+                <input asp-for="Customer.phone_numbers" class="form-control" />
+                <span asp-validation-for="Customer.phone_numbers" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Customer.email" class="control-label"></label>
+                <input asp-for="Customer.email" class="form-control" />
+                <span asp-validation-for="Customer.email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-success" />
+                <a asp-page="./Index" class="btn btn-primary">Back to List</a>
+            </div>
+        </form>
+    </div>
 </div>
 
 @section Scripts {
-	@{
-		await Html.RenderPartialAsync("_ValidationScriptsPartial");
-	}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

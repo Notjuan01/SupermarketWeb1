@@ -4,67 +4,98 @@
 	ViewData["Title"] = "Index Customers";
 }
 <h1>Index Customers</h1>
-<p>
-	<a asp-page="Create" class="btn btn-success">Create New</a>
-</p>
-<table class="table">
-	<thead>
-		<tr>
-			<th>
-				@Html.DisplayNameFor(model => model.Customers[0].document_number)
-			</th>
-			<th>
-				@Html.DisplayNameFor(model => model.Customers[0].firts_name)
-			</th>
-			<th>
-				@Html.DisplayNameFor(model => model.Customers[0].last_name)
-			</th>
-			<th>
-				@Html.DisplayNameFor(model => model.Customers[0].address)
-			</th>
-			<th>
-				@Html.DisplayNameFor(model => model.Customers[0].birthday)
-			</th>
-			<th>
-				@Html.DisplayNameFor(model => model.Customers[0].phone_numbers)
-			</th>
-			<th>
-				@Html.DisplayNameFor(model => model.Customers[0].email)
-			</th>
-			<th>Action</th>
-		</tr>
-	</thead>
-	<tbody>
-		@foreach (var item in Model.Customers)
-		{
-			<tr>
-				<td>
-					@Html.DisplayFor(modelItem => item.document_number)
-				</td>
-				<td>
-					@Html.DisplayFor(modelItem => item.firts_name)
-				</td>
-				<td>
-					@Html.DisplayFor(modelItem => item.last_name)
-				</td>
-				<td>
-					@Html.DisplayFor(modelItem => item.address)
-				</td>
-				<td>
-					@Html.DisplayFor(modelItem => item.birthday)
-				</td>
-				<td>
-					@Html.DisplayFor(modelItem => item.phone_numbers)
-				</td>
-				<td>
-					@Html.DisplayFor(modelItem => item.email)
-				</td>
-				<td>
-					<a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a>
-					<a asp-page="./Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
-				</td>
 
-			</tr>
-		}
+<p>
+    <a asp-page="/Customers/Create" class="btn btn-success">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @if (Model.Customers != null && Model.Customers.Count > 0)
+                {
+                    @Html.DisplayNameFor(model => model.Customers[0].document_number)
+                }
+            </th>
+            <th>
+                @if (Model.Customers != null && Model.Customers.Count > 0)
+                {
+                    @Html.DisplayNameFor(model => model.Customers[0].firts_name)
+                }
+            </th>
+            <th>
+                @if (Model.Customers != null && Model.Customers.Count > 0)
+                {
+                    @Html.DisplayNameFor(model => model.Customers[0].last_name)
+                }
+            </th>
+            <th>
+                @if (Model.Customers != null && Model.Customers.Count > 0)
+                {
+                    @Html.DisplayNameFor(model => model.Customers[0].address)
+                }
+            </th>
+            <th>
+                @if (Model.Customers != null && Model.Customers.Count > 0)
+                {
+                    @Html.DisplayNameFor(model => model.Customers[0].birthday)
+                }
+            </th>
+            <th>
+                @if (Model.Customers != null && Model.Customers.Count > 0)
+                {
+                    @Html.DisplayNameFor(model => model.Customers[0].phone_numbers)
+                }
+            </th>
+            <th>
+                @if (Model.Customers != null && Model.Customers.Count > 0)
+                {
+                    @Html.DisplayNameFor(model => model.Customers[0].email)
+                }
+            </th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Customers != null && Model.Customers.Count > 0)
+        {
+            foreach (var item in Model.Customers)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.document_number)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.firts_name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.last_name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.birthday)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.phone_numbers)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.email)
+                    </td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a>
+                        <a asp-page="./Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="8">No records found.</td>
+            </tr>
+        }
 	</tbody>
 </table>
