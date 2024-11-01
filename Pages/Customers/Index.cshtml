@@ -1,12 +1,12 @@
 ﻿@page
 @model SupermarketWeb.Pages.Customers.IndexModel
 @{
-	ViewData["Tittle"] = "Index Customers";
+    ViewData["Tittle"] = "Index Customers";
 }
-<h1>Index Customers</h1>
+<h1>Index Customer</h1>
 
 <p>
-    <a asp-page="/Customers/Create" class="btn btn-success">Create New</a>
+    <a asp-page="/Customer/Create" class="btn btn-success">Create New</a>
 </p>
 
 <table class="table">
@@ -24,7 +24,7 @@
                     @Html.DisplayNameFor(model => model.Customers[0].firts_name)
                 }
             </th>
-            <th>
+             <th>
                 @if (Model.Customers != null && Model.Customers.Count > 0)
                 {
                     @Html.DisplayNameFor(model => model.Customers[0].last_name)
@@ -97,5 +97,5 @@
                 <td colspan="3">No records found.</td>
             </tr>
         }
-	</tbody>
+    </tbody>
 </table>
