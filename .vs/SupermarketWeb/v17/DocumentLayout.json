@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|c:\\users\\juanp\\source\\repos\\supermarketweb1\\pages\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|solutionrelative:pages\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|c:\\users\\juanp\\source\\repos\\supermarketweb1\\data\\supermarketcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|solutionrelative:data\\supermarketcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|c:\\users\\juanp\\source\\repos\\supermarketweb1\\pages\\customers\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|solutionrelative:pages\\customers\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|c:\\users\\juanp\\source\\repos\\supermarketweb1\\pages\\customers\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|solutionrelative:pages\\customers\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|c:\\users\\juanp\\source\\repos\\supermarketweb1\\pages\\customers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|solutionrelative:pages\\customers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|c:\\users\\juanp\\source\\repos\\supermarketweb1\\models\\paymode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE60135-997A-4D5D-9C21-0EE9121B6EC4}|SupermarketWeb.csproj|solutionrelative:models\\paymode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SupermarketContext.cs",
+              "DocumentMoniker": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb1\\Data\\SupermarketContext.cs",
+              "RelativeDocumentMoniker": "Data\\SupermarketContext.cs",
+              "ToolTip": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb1\\Data\\SupermarketContext.cs",
+              "RelativeToolTip": "Data\\SupermarketContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T13:38:39.461Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -38,52 +43,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb1\\Pages\\Categories\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Categories\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb1\\Pages\\Categories\\Delete.cshtml",
-              "RelativeToolTip": "Pages\\Categories\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-31T19:43:19.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Delete.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb1\\Pages\\Customers\\Delete.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Customers\\Delete.cshtml.cs",
-              "ToolTip": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb1\\Pages\\Customers\\Delete.cshtml.cs",
-              "RelativeToolTip": "Pages\\Customers\\Delete.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAWAAAA",
+              "Title": "PayMode.cs",
+              "DocumentMoniker": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb1\\Models\\PayMode.cs",
+              "RelativeDocumentMoniker": "Models\\PayMode.cs",
+              "ToolTip": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb1\\Models\\PayMode.cs",
+              "RelativeToolTip": "Models\\PayMode.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T19:26:54.454Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb1\\Pages\\Customers\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Customers\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb1\\Pages\\Customers\\Delete.cshtml",
-              "RelativeToolTip": "Pages\\Customers\\Delete.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACcAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-31T19:11:53.744Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb1\\Pages\\Customers\\Index.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Customers\\Index.cshtml",
-              "ToolTip": "C:\\Users\\juanp\\source\\repos\\SupermarketWeb1\\Pages\\Customers\\Index.cshtml",
-              "RelativeToolTip": "Pages\\Customers\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-31T17:05:41.57Z"
+              "WhenOpened": "2024-11-01T13:38:00.701Z",
+              "EditorCaption": ""
             }
           ]
         }

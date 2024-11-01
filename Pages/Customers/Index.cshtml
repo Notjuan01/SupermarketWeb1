@@ -1,7 +1,7 @@
 ﻿@page
 @model SupermarketWeb.Pages.Customers.IndexModel
 @{
-	ViewData["Tittle"] = "Index Customers";
+	ViewData["Title"] = "Index Customers";
 }
 <h1>Index Customers</h1>
 <p>
@@ -39,31 +39,31 @@
 		{
 			<tr>
 				<td>
-					@Html.DisplayFor(model => model.Customers[0].document_number)
+					@Html.DisplayFor(modelItem => item.document_number)
 				</td>
 				<td>
 					@Html.DisplayFor(modelItem => item.firts_name)
 				</td>
 				<td>
-					@Html.DisplayFor(modelItem => item.last_name) 
+					@Html.DisplayFor(modelItem => item.last_name)
 				</td>
 				<td>
-					@Html.DisplayFor(model => model.Customers[0].address)
+					@Html.DisplayFor(modelItem => item.address)
 				</td>
 				<td>
-					@Html.DisplayFor(model => model.Customers[0].birthday)
+					@Html.DisplayFor(modelItem => item.birthday)
 				</td>
 				<td>
-					@Html.DisplayFor(model => model.Customers[0].phone_numbers)
+					@Html.DisplayFor(modelItem => item.phone_numbers)
 				</td>
 				<td>
-					@Html.DisplayFor(model => model.Customers[0].email)
+					@Html.DisplayFor(modelItem => item.email)
 				</td>
 				<td>
 					<a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a>
 					<a asp-page="./Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
-
 				</td>
+
 			</tr>
 		}
 	</tbody>

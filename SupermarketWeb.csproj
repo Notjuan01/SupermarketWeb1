@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Content Remove="Pages\Customers\Delete.cshtml" />
+    <Content Remove="Pages\Customers\Edit.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -33,10 +34,16 @@
 
   <ItemGroup>
     <_ContentIncludedByDefault Remove="Pages\Customers\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\Customers\Edit.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="Pages\Customers\Delete.cshtml" />
+    <None Include="Pages\Customers\Edit.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Customers\Edit.cshtml" />
   </ItemGroup>
 
 </Project>

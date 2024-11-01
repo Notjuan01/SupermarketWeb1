@@ -41,18 +41,20 @@ namespace SupermarketWeb.Pages.Customers
 				return NotFound();
 			}
 
-			var customer = await _context.Customers.FindAsync(id);
+			var custommers = await _context.Customers.FindAsync(id);
 
-			if (customer == null)
+			if (custommers == null)
 			{
 				return NotFound();
 			}
 
-			_context.Customers.Remove(customer);
+			_context.Customers.Remove(custommers);
 			await _context.SaveChangesAsync();
 
 			return RedirectToPage("./Index");
 		}
 	}
+
 }
+
 
