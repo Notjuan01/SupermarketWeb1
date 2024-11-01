@@ -50,7 +50,6 @@ namespace SupermarketWeb.Pages.Categories
 				return NotFound();
 			}
 
-			// Actualiza los valores de la entidad existente con los nuevos valores de Category
 			_context.Entry(categoryInDb).CurrentValues.SetValues(Category);
 
 			try
@@ -59,7 +58,7 @@ namespace SupermarketWeb.Pages.Categories
 			}
 			catch (DbUpdateConcurrencyException)
 			{
-				// Maneja excepciones de concurrencia
+
 			}
 
 			return RedirectToPage("./Index");
