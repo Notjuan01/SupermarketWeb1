@@ -23,7 +23,7 @@ namespace SupermarkerEF.Data
 
 		public DbSet<PayModel> PayModes { get; set; }
 
-		public DbSet<Product> Products { get; set; }
+		public DbSet<product> Products { get; set; }
 
 		public DbSet<Category> Categories { get; set; }
 	}

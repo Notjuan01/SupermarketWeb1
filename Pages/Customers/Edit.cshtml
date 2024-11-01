@@ -1,0 +1,37 @@
+﻿@page
+@model SupermarketWeb.Pages.Customers.EditModel
+@{
+	ViewData["Tittle"] = "Index Customers";
+}
+<h1>Edit</h1>
+
+<h4>Customer</h4>
+<hr />
+<div class="row">
+    <div class="col-sm-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="customer.Id" />
+            <div class="form-group">
+                <label asp-for="customer.document_number" class="control-label"></label>
+                <input asp-for="customer.document_number" class="form-control" />
+                <span asp-validation-for="customer.document_number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="customer.firts_name" class="control-label"></label> 
+                <input asp-for="customer.firts_name" class="form-control" /> 
+                <span asp-validation-for="customer.firts_name" class="text-danger"></span> 
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-success" />
+                <a asp-page="./Index" class="btn btn-primary">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

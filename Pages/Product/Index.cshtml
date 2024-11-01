@@ -1,0 +1,56 @@
+﻿@page
+@model SupermarketWeb.Pages.Product.IndexModel
+@{
+    ViewData["Tittle"] = "Index Product";
+}
+<h1>Index PayMode</h1>
+
+<p>
+    <a asp-page="/Poducts/Create" class="btn btn-success">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @if (Model.Products != null && Model.Products.Count > 0)
+                {
+                    @Html.DisplayNameFor(model => model.Products[0].Name)
+                }
+            </th>
+            <th>
+                @if (Model.Products != null && Model.Products.Count > 0)
+                {
+                    @Html.DisplayNameFor(model => model.Products[0].Price)
+                }
+            </th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Products != null && Model.Products.Count > 0)
+        {
+            foreach (var item in Model.Products)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a>
+                        <a asp-page="./Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="3">No records found.</td>
+            </tr>
+        }
+    </tbody>
+</table>

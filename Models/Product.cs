@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace SupermarketWEB.Models;
 
-public class Product
+public class product
 {
 
 	public int Id { get; set; }
