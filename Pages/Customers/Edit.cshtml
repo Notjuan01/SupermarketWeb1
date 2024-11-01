@@ -23,6 +23,31 @@
                 <span asp-validation-for="customer.firts_name" class="text-danger"></span> 
             </div>
             <div class="form-group">
+                <label asp-for="customer.last_name" class="control-label"></label>
+                <input asp-for="customer.last_name" class="form-control" />
+                <span asp-validation-for="customer.last_name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="customer.address" class="control-label"></label>
+                <input asp-for="customer.address" class="form-control" />
+                <span asp-validation-for="customer.address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="customer.birthday" class="control-label"></label>
+                <input asp-for="customer.birthday" class="form-control" />
+                <span asp-validation-for="customer.birthday" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="customer.phone_numbers" class="control-label"></label>
+                <input asp-for="customer.phone_numbers" class="form-control" />
+                <span asp-validation-for="customer.phone_numbers" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="customer.email" class="control-label"></label>
+                <input asp-for="customer.email" class="form-control" />
+                <span asp-validation-for="customer.email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-success" />
                 <a asp-page="./Index" class="btn btn-primary">Back to List</a>
             </div>
