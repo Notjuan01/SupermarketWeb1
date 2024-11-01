@@ -36,19 +36,19 @@ namespace SupermarketWeb.Pages.Customers
 
 		public async Task<IActionResult> OnPostAsync(int? id)
 		{
-			if (id == null)
+			if (id == null || _context.Customers == null)
 			{
 				return NotFound();
 			}
 
-			var custommers = await _context.Customers.FindAsync(id);
+			var payMode = await _context.Customers.FindAsync(id);
 
-			if (custommers == null)
+			if (payMode == null)
 			{
 				return NotFound();
 			}
 
-			_context.Customers.Remove(custommers);
+			_context.Customers.Remove(Customer);
 			await _context.SaveChangesAsync();
 
 			return RedirectToPage("./Index");
