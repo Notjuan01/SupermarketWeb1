@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using SupermarkerEF.Data;
-using SupermarketWeb.Models;
 using SupermarketWEB.Models;
 
 namespace SupermarketWeb.Pages.Product
