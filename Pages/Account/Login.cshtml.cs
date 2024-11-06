@@ -2,20 +2,37 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using SupermarketWeb.Models;
 using Microsoft.Identity.Client.Platforms.Features.DesktopOs;
+using Microsoft.AspNetCore.Authentication;
+using System.Security.Claims;
 
 namespace SupermarketWeb.Pages.Account
 {
     public class LoginModel : PageModel
     {
         [BindProperty]
-        public User user { get; set; }
+        public User User { get; set; }
         public void OnGet()
         {
         }
 
-        public void OnPost()
+        public async Task<IActionResult> OnPostAsync()
         {
-            Console.WriteLine("User: " + user.Email + " Password: " + user.Password);
+            if (!ModelState.IsValid) return Page();
+            if(User.Email == "correo@gmail.com" && User.Password == "1234")
+            {
+                var clains = new List<Claim> 
+                {
+                new Claim(ClaimTypes.Name, "admin"),
+                new Claim(ClaimTypes.Email, User.Email),
+                };
+                var identity = new ClaimsIdentity(clains, "My coockieAuth");
+                ClaimsPrincipal claimsPrincipal = new ClaimsPrincipal(identity);
+
+                await HttpContext.SignInAsync("MycookieAuth", claimsPrincipal);
+                return RedirectToPage("/Index");
+            }
+            return Page();
         }
     }
+
 }
