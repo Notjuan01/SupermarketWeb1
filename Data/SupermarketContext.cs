@@ -26,5 +26,6 @@ namespace SupermarkerEF.Data
 		public DbSet<product> Products { get; set; }
 
 		public DbSet<Category> Categories { get; set; }
+		public DbSet<User> Users { get; set; }
 	}
 }
