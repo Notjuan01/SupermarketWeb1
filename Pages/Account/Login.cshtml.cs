@@ -18,7 +18,6 @@ namespace SupermarketWeb.Pages.Account
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid) return Page();
-            if(User.Email == "correo@gmail.com" && User.Password == "1234")
             {
                 var clains = new List<Claim> 
                 {

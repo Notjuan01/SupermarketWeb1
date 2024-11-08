@@ -1,6 +1,9 @@
-﻿namespace SupermarketWeb.Models
+﻿using Microsoft.AspNetCore.Authorization;
+
+namespace SupermarketWeb.Models
 {
-	public class Customer
+    
+    public class Customer
 	{
 		public int Id { get; set; }
 		public int document_number { get; set; }

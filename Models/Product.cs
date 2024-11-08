@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.AspNetCore.Authorization;
 using SupermarketWEB.Models;
 using System;
 using System.Collections.Generic;
